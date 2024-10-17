@@ -1,0 +1,7 @@
+13) print 1-6 with for loop
+#!/bin/bash
+
+for var in 1 2 3 4 5 6
+do
+        echo $var
+done

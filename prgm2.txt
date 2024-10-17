@@ -1,0 +1,8 @@
+2)write shell script with variable
+#!bin/bash
+
+name="$1"
+course="$2"
+
+echo "name is $name"
+echo "course is $course"

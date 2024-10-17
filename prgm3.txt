@@ -1,0 +1,15 @@
+3)WAP to Airthematic operations
+#!bin/bash
+#
+sum=$(($1+$2 ))
+sub=$(($1-$2))
+rem=$(($1%$2))
+mul=$(($1*$2))
+div=$(($1/$2))
+
+
+echo "sum of 2 numbers = $sum"
+echo "subtraction of 2 numbers = $sub"
+echo "rem = $rem"
+echo "multipication of 2 numbers = $mul"
+echo "division of 2 numbers = $div"

@@ -1,0 +1,15 @@
+10)display a name for above age of 40
+
+#!/bin/bash
+sed '1d' input > temp
+while read line
+do
+        age=`echo $line | cut -d " " -f3`
+        if [ $age -ge 40 ]
+        then
+                name=`echo $line | cut -d " " -f1`
+                echo $name
+        fi
+done < temp
+rm temp
+

@@ -1,0 +1,11 @@
+17) local variable using function
+
+#!/bin/bash
+hello()
+{
+        local name $1
+        echo "my name $1"
+}
+name=sachin
+echo "my name is $name"
+hello sunil

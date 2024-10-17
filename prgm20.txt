@@ -1,0 +1,12 @@
+20) delete 2 days older file
+#!/bin/bash
+#set -x
+
+files=`find /home/ubuntu -name "*.sh"  -mtime +2`
+for i in $files
+do
+
+        echo "deleted file is $i"
+        rm $i
+done
+

@@ -1,0 +1,14 @@
+16) Factorial number for 1-5 using for loop
+
+#!/bin/bash
+for var in 1 2 3 4 5
+do
+        n=$var
+        fact=1
+        while [ $n -gt 0 ]
+        do
+                fact=$(($fact * $n))
+                n=$((n-1))
+        done
+        echo "fatcorial of $var is $fact"
+done

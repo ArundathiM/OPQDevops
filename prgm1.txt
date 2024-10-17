@@ -1,0 +1,7 @@
+1) to print name and course
+#!bin/bash
+name="Aru"
+course="Shellscripting"
+
+echo "name is $name"
+echo "course is $course"
