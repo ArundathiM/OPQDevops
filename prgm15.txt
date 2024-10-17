@@ -1,0 +1,13 @@
+15)checking tomcat status
+
+#!/bin/bash
+for i in tomcat9
+do
+        systemctl is-active --quite $i
+        if [$? -ne 0 ]
+        then
+                sudo systemctl start $i
+                echo "it is started by script"
+        fi
+done
+echo "tomcat service is up and functional"

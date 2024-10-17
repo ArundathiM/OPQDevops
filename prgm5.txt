@@ -1,0 +1,19 @@
+5) password 
+
+#!/bin/bash
+# set -x
+read -p "please enter the password:" pass
+count=`echo ${#pass}`
+if [[ $count -ne 8 ]];
+then
+        echo "password length should be 8 characters"
+        exit 1;
+fi
+echo $pass | grep "[A-Z]" | grep "[a-z]" | grep "[0-9]" | grep "[@$#&]"
+# echo $pass | grep "[A-Z]" | grep "[a-z]" | grep "[0-9]" | grep "[@$#&]"
+if [[ $? -ne 0 ]]
+then
+        echo "password must contain upper,lowe,number,special characters"
+        exit 2;
+fi
+echo "password is strong"
